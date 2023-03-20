@@ -21,15 +21,7 @@ const App = () => {
   };
 
   const calculateResult = () => {
-    try {
-      setCurrentNumber(prev => String(eval(prev)));
-      alert('error');
-
-    } catch (error) {
-      setCurrentNumber('0');
-      alert(error);
-    }
-   
+    setCurrentNumber(prev => String(eval(prev)));   
   };
 
   return (
